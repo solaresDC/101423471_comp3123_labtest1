@@ -21,20 +21,20 @@ setTimeout(()=>{
 
 
 function resolvedPromise(){
-return new Promise( () =>{
+return new Promise( (resolve,reject) =>{
     setTimeout(()=>{
         let success = {'message':'delayed success!'}
-        console.log(success);
+        resolve(success);
     },500)
 })
 }
 
 function rejectedPromise(){
-return new Promise(()=>{
+return new Promise((resolve,reject)=>{
 setTimeout(()=>{
     try{
      let error = {'error':'delayed excpetion!'}
-     console.log(error)
+     reject(error)
 
     } catch (e){
      console.error(e);
@@ -42,5 +42,5 @@ setTimeout(()=>{
  },500)
 })
 }
-resolvedPromise()
-rejectedPromise()
+resolvedPromise().then((data)=>console.log(data))
+rejectedPromise().then().catch((data)=> console.log(data))
