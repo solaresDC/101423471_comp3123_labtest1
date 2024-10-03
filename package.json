@@ -1,0 +1,29 @@
+{
+  "name": "101423471_comp3123_labtest1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test1": "node question-1/index1.js",
+    "test2": "node question-2/index2.js",
+    "test3": "nodemon question-3/index3.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solaresDC/101423471_comp3123_labtest1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solaresDC/101423471_comp3123_labtest1/issues"
+  },
+  "homepage": "https://github.com/solaresDC/101423471_comp3123_labtest1#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
